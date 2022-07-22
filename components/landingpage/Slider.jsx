@@ -16,7 +16,7 @@ const Slider = () => {
         pagination={{
           clickable: true,
         }}
-        slidesPerView={4}
+        // slidesPerView={4}
         grabCursor={true}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
