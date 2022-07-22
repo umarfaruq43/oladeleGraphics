@@ -40,7 +40,7 @@ const ClientCard = ({ data }) => {
 
         <Flex
           mt="24px"
-          align={["flex-end", "center"]}
+          align={{ base: "", md: "center" }}
           justify="space-between"
           flexDir={["column", "row"]}
         >

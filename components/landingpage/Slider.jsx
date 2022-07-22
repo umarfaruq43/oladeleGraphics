@@ -20,7 +20,7 @@ const Slider = () => {
         grabCursor={true}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
-        style={{minWidth: "281px"}}
+        style={{maxWidth: "281px"}}
       >
         {/* {workImage} */}
         {/* {workImage.map((item, i) => {
