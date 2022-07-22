@@ -40,7 +40,7 @@ const Portfolio = () => {
           _hover={{ bg: "transparent" }}
           _focus={{ bg: "transparent" }}
           fontSize={{ base: "13px", md: "24px" }}
-          onClick={() => router.push("/portfolio")}
+          onClick={() => router.push("/work")}
         >
           SEE MORE
         </Button>

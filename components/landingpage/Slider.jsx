@@ -20,6 +20,7 @@ const Slider = () => {
         grabCursor={true}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
+        style={{minWidth: "281px"}}
       >
         {/* {workImage} */}
         {/* {workImage.map((item, i) => {
@@ -44,6 +45,7 @@ const Slider = () => {
                 // border="1px"
                 borderRadius="20px"
                 className="slides"
+                minW="281px"
               >
                 <Image
                   src={item && item}
