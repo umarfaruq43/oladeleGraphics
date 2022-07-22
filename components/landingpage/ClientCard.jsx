@@ -40,7 +40,7 @@ const ClientCard = ({ data }) => {
 
         <Flex
           mt="24px"
-          align={{ base: "", md: "center" }}
+          align={["normal", "center"]}
           justify="space-between"
           flexDir={["column", "row"]}
         >
@@ -52,8 +52,9 @@ const ClientCard = ({ data }) => {
               {countryName && countryName}
             </Text>
           </Box>
-          <Box overflow="hidden" textAlign="right" mt={["-20px", "0"]}>
+          <Box overflow="hidden" textAlign="right" mt={["-18px", "0"]}>
             <Image
+            display="inline"
               src={bookImage && bookImage}
               alt=""
               w="60px"
