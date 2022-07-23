@@ -1,8 +1,26 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, Spinner } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { workImage } from "../dynamicDatas";
 import Modal from "./Modal";
-import Image from "next/image";
+// import Image from "next/image";
+
+const fall = () => {
+  return (
+    <Flex
+      opacity="0"
+      position="absolute"
+      w="full"
+      bgColor="rgba(0,0,0, .5)"
+      bottom="0"
+      top="0"
+      zIndex="10"
+      justify="center"
+      align="center"
+    >
+      <Spinner />
+    </Flex>
+  );
+};
 
 const Works = () => {
   const [show, setShow] = useState(false);
@@ -17,18 +35,20 @@ const Works = () => {
               setShow(!show);
               setCurrent(item);
             };
-            console.log(item);
+            // console.log(item);
             return (
               <Box key={i}>
                 <Modal show={show} handleShow={handleShow} data={current} />
                 <Box
                   overflow="hidden"
                   // w="281px"
+                  position="relative"
                   h="355px"
                   bgColor="red"
                   borderRadius="20px"
                   className="work slides"
                   minW="281px"
+                  maxW="281px"
                   w="30%"
                   cursor="pointer"
                   // mx="auto"
@@ -47,9 +67,10 @@ const Works = () => {
                     justify="center"
                     align="center"
                   >
-                    <Text color="#fff"> See more</Text>
+                    {/* <Spinner /> */}
+                    <Text color="#fff"> View larger Image </Text>
                   </Flex>
-                  <Image
+                  {/* <Image
                     src={item.main}
                     alt="Work Sample"
                     // width="100%"
@@ -58,6 +79,15 @@ const Works = () => {
                     quality="10"
                     // size=""
                     objectFit="cover"
+                  /> */}
+
+                  <Image
+                    src={item.main}
+                    alt="Work Sample"
+                    width="100%"
+                    height="100%"
+                    objectFit="cover"
+                    fallback={fall}
                   />
                 </Box>
               </Box>

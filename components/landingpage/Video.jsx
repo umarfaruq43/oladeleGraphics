@@ -4,7 +4,7 @@ import React from "react";
 const Video = () => {
   return (
     <Box px={{ base: "31px", md: "11px" }}>
-      <Flex mx="auto" maxW="1200px" flexDir={{ base: "column", md: "row" }}>
+      <Flex mx="auto" maxW="1200px" flexDir={{ base: "column", md: "row" }} gap="30px">
         <Box w={{ base: "100%", md: "" }}>
           <Image
             mx="auto"
@@ -14,7 +14,7 @@ const Video = () => {
             w="100%"
           />
         </Box>
-        <Flex w={["100%", ""]} justify="center" align="center">
+        <Flex w={["100%", ""]} justify="center" align="center" >
           <Button
             borderRadius="70px"
             border="1px"

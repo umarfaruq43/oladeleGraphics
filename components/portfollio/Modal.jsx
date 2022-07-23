@@ -6,17 +6,23 @@ import { GrClose } from "react-icons/gr";
 import { workImage } from "../dynamicDatas";
 
 const Modal = ({ data, show, handleShow }) => {
-  // const getAll = [];
-  // getAll.push(data.main);
-  // data.children.length !== 0 ? getAll.push(data.children[0]) : null;
-  // data.children.length > 1 ? getAll.push(data.children[1]) : null;
-  // data.children.length > 2 ? getAll.push(data.children[2]) : null;
+  const getAll = [];
+  data && getAll.push(data.main);
+  data && data.children && data.children.length !== 0
+    ? getAll.push(data.children[0])
+    : null;
+ data && data.children && data.children.length > 1
+   ? getAll.push(data.children[1])
+   : null;
+  data && data.children && data.children.length > 2
+    ? getAll.push(data.children[2])
+    : null;
 
   //   data.children.length > 1  ? console.log()
 
-  const mainData = workImage.filter((item) => data && item.main === data.main);
+  // const mainData = workImage.filter((item) => data && item.main === data.main);
 
-  console.log(mainData);
+  // console.log(mainData);
   return (
     <Flex
       position="fixed"
@@ -40,7 +46,7 @@ const Modal = ({ data, show, handleShow }) => {
         <GrClose />
       </Button>
 
-      {/* <Swiper
+      <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
@@ -53,8 +59,8 @@ const Modal = ({ data, show, handleShow }) => {
         }}
         modules={[Zoom, Navigation, Pagination]}
         className="mySwiper"
-      > */}
-      {/* {data &&
+      >
+        {data &&
           getAll.map((item, i) => {
             return (
               <SwiperSlide key={i}>
@@ -63,13 +69,8 @@ const Modal = ({ data, show, handleShow }) => {
                 </div>
               </SwiperSlide>
             );
-          })} */}
-      {/* <SwiperSlide>
-          <div className="swiper-zoom-container">
-            <Image src="/landingpage/test2.jpg" alt="Images" />
-          </div>
-        </SwiperSlide> */}
-      {/* </Swiper> */}
+          })}
+      </Swiper>
 
       {/* <Text> {  mainData.main} </Text> */}
     </Flex>
