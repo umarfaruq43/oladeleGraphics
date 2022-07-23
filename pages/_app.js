@@ -11,6 +11,8 @@ import NextNProgress from "nextjs-progressbar";
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
+      <CSSReset />
+
       <NextNProgress
         color="#29D"
         startPosition={0.3}
@@ -18,8 +20,6 @@ function MyApp({ Component, pageProps }) {
         height={3}
         showOnShallow={true}
       />
-      <CSSReset />
-
       <Component {...pageProps} />
     </ChakraProvider>
   );
