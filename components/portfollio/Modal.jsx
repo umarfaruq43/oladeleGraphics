@@ -1,17 +1,22 @@
-import { Box, Flex, Button, Image } from "@chakra-ui/react";
+import { Box, Flex, Button, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Zoom, Navigation, Pagination } from "swiper";
 import { GrClose } from "react-icons/gr";
+import { workImage } from "../dynamicDatas";
 
 const Modal = ({ data, show, handleShow }) => {
-  const getAll = [];
-  getAll.push(data.main);
-  data.children.length !== 0 ? getAll.push(data.children[0]) : null;
-  data.children.length > 1 ? getAll.push(data.children[1]) : null;
-  data.children.length > 2 ? getAll.push(data.children[2]) : null;
+  // const getAll = [];
+  // getAll.push(data.main);
+  // data.children.length !== 0 ? getAll.push(data.children[0]) : null;
+  // data.children.length > 1 ? getAll.push(data.children[1]) : null;
+  // data.children.length > 2 ? getAll.push(data.children[2]) : null;
 
-//   data.children.length > 1  ? console.log()
+  //   data.children.length > 1  ? console.log()
+
+  const mainData = workImage.filter((item) => data && item.main === data.main);
+
+  console.log(mainData);
   return (
     <Flex
       position="fixed"
@@ -35,7 +40,7 @@ const Modal = ({ data, show, handleShow }) => {
         <GrClose />
       </Button>
 
-      <Swiper
+      {/* <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
@@ -47,9 +52,9 @@ const Modal = ({ data, show, handleShow }) => {
           clickable: true,
         }}
         modules={[Zoom, Navigation, Pagination]}
-        // className="mySwiper"
-      >
-        {data &&
+        className="mySwiper"
+      > */}
+      {/* {data &&
           getAll.map((item, i) => {
             return (
               <SwiperSlide key={i}>
@@ -58,13 +63,15 @@ const Modal = ({ data, show, handleShow }) => {
                 </div>
               </SwiperSlide>
             );
-          })}
-        {/* <SwiperSlide>
+          })} */}
+      {/* <SwiperSlide>
           <div className="swiper-zoom-container">
             <Image src="/landingpage/test2.jpg" alt="Images" />
           </div>
         </SwiperSlide> */}
-      </Swiper>
+      {/* </Swiper> */}
+
+      {/* <Text> {  mainData.main} </Text> */}
     </Flex>
   );
 };

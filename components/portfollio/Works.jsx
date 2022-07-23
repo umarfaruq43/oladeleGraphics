@@ -6,21 +6,21 @@ import Image from "next/image";
 
 const Works = () => {
   const [show, setShow] = useState(false);
-  const myLoader = () => {
-    return `https://via.placeholder.com/281X735?text=Loading...`;
-  };
+  const [current, setCurrent] = useState([]);
+
   return (
     <Box position="relative" overflow="hidden">
       <Box maxW="1200px" mx="auto" px={["31px", "11px"]} my="41px">
         <Flex flexWrap="wrap" gap="30px" justifyContent="center">
           {workImage.map((item, i) => {
-            const handleShow = (e) => {
+            const handleShow = (e, item) => {
               setShow(!show);
+              setCurrent(item);
             };
-
+            console.log(item);
             return (
               <Box key={i}>
-                {/* <Modal show={show} handleShow={handleShow} data={item} /> */}
+                <Modal show={show} handleShow={handleShow} data={current} />
                 <Box
                   overflow="hidden"
                   // w="281px"
@@ -32,7 +32,7 @@ const Works = () => {
                   w="30%"
                   cursor="pointer"
                   // mx="auto"
-                  onClick={handleShow}
+                  onClick={(e) => handleShow(e, item)}
                 >
                   {/* modal start  */}
 
@@ -50,14 +50,12 @@ const Works = () => {
                     <Text color="#fff"> See more</Text>
                   </Flex>
                   <Image
-                    // src="/landingpage/book2.svg"
-                    loader={myLoader}
                     src={item.main}
                     alt="Work Sample"
-                    width="100%"
-                    height="100%"
+                    // width="100%"
+                    // height="100%"
                     layout="fill"
-                    quality="40"
+                    quality="10"
                     // size=""
                     objectFit="cover"
                   />
