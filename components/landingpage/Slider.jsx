@@ -16,11 +16,11 @@ const Slider = () => {
         pagination={{
           clickable: true,
         }}
+        loop={true}
         // slidesPerView={4}
         grabCursor={true}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
-        style={{maxWidth: "281px"}}
       >
         {/* {workImage} */}
         {/* {workImage.map((item, i) => {
@@ -53,7 +53,7 @@ const Slider = () => {
                   w="281px"
                   h="355px"
                   objectFit="cover"
-                  fallbackSrc="https://via.placeholder.com/281X335"
+                  fallbackSrc="https://via.placeholder.com/281X335?Loading..."
                 />
               </Box>
             </SwiperSlide>

@@ -34,7 +34,6 @@ export default function Navbar() {
     router.route === "/" ? setNavRoute(true) : setNavRoute(false);
   }, []); // eslint-disable-line
 
-  console.log(navRoute);
   return (
     <Box zIndex="50">
       <Flex
@@ -93,14 +92,13 @@ const DesktopNav = () => {
     router.route === "/" ? setNavRoute(true) : setNavRoute(false);
   }, []); // eslint-disable-line
 
-  console.log(navRoute);
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem, index) => (
         <Box key={navItem.label}>
           <Link
             p={2}
-            href={navRoute ? navItem.href : "/"}
+            href={navRoute ? navItem.href : `/${navItem.href}`}
             fontSize={"16px"}
             fontWeight={700}
             // color="brand.brown"
@@ -150,14 +148,13 @@ const MobileNavItem = ({ label, children, href }) => {
     router.route === "/" ? setNavRoute(true) : setNavRoute(false);
   }, []); // eslint-disable-line
 
-  console.log(navRoute);
 
   return (
     <Stack spacing={4}>
       <Flex
         py={2}
         as={Link}
-        href={navRoute ? href : "/"}
+        href={navRoute ? href : `/${href}`}
         justify={"space-between"}
         align={"center"}
         _hover={{
