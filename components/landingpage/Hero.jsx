@@ -1,7 +1,15 @@
-import { Box, Flex, Text, Image, Button } from "@chakra-ui/react";
-import React from "react";
+import { Box, Flex, Text, Image, Button, Link } from "@chakra-ui/react";
+import React, { useEffect } from "react";
+import NextLink from "next/link";
+import "aos/dist/aos.css";
 
+import AOS from "aos";
 const Hero = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <Box
       overflow="hidden"
@@ -100,29 +108,33 @@ const Hero = () => {
               Hit the right points for the genre by bringing your vision into a
               creative book cover within 72 hours.
             </Text>
-            <Button
-              w="full"
-              maxW={["128px", null, "304px"]}
-              mt="14px"
-              borderRadius="40px"
-              fontWeight="700"
-              fontSize={["11px", null, "24px"]}
-              py="5px"
-              h={["32px", null, "68px"]}
-              border="1px"
-              borderColor="brand.brown"
-              bg="transparent"
-              textAlign="left"
-            >
-              <Image
-                src="/landingpage/arrow.svg"
-                alt="arrow"
-                w={["20px", null, "45px"]}
-                h={["20px", null, "45px"]}
-                mr={["6px", null, "16px"]}
-              />
-              <Text as="span"> Get Started</Text>
-            </Button>
+            <NextLink href="https://wa.me/message/JX5ANIYU4LFCK1" passHref>
+              <Link _hover={{ bg: "transparent", textDecoration: "none" }}>
+                <Button
+                  w="full"
+                  maxW={["128px", null, "304px"]}
+                  mt="14px"
+                  borderRadius="40px"
+                  fontWeight="700"
+                  fontSize={["11px", null, "24px"]}
+                  py="5px"
+                  h={["32px", null, "68px"]}
+                  border="1px"
+                  borderColor="brand.brown"
+                  bg="transparent"
+                  textAlign="left"
+                >
+                  <Image
+                    src="/landingpage/arrow.svg"
+                    alt="arrow"
+                    w={["20px", null, "45px"]}
+                    h={["20px", null, "45px"]}
+                    mr={["6px", null, "16px"]}
+                  />
+                  <Text as="span"> Get Started</Text>
+                </Button>
+              </Link>
+            </NextLink>
           </Box>
         </Flex>
         <Box

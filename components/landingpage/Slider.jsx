@@ -1,9 +1,9 @@
-import { background, Box, Text } from "@chakra-ui/react";
+import { background, Box, Text, Image } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, FreeMode } from "swiper";
 import { workImage } from "../../components/dynamicDatas";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Slider = () => {
   const portfolio = workImage.map((item, i) => item.main);
@@ -62,16 +62,16 @@ const Slider = () => {
                   <Image
                     src={item && item}
                     alt="Work Sample"
-                    width="100%"
+                    // width="100%"
                     height="100%"
-                    layout="fill"
-                    quality="40"
+                    // layout="fill"
+                    // quality="40"
                     objectFit="cover"
                     style={{ borderRadius: "20px" }}
                     // w="100%"
                     // h="335px"
                     // objectFit="cover"
-                    // fallbackSrc="https://via.placeholder.com/281X335?Loading..."
+                    fallbackSrc="https://via.placeholder.com/281X335?Loading..."
                   />
                 </Box>
               </SwiperSlide>

@@ -44,7 +44,7 @@ const Works = () => {
                   // w="281px"
                   position="relative"
                   h="355px"
-                  bgColor="red"
+                  bgColor="rgba(6,6,6, .5)"
                   borderRadius="20px"
                   className="work slides"
                   minW="281px"
@@ -87,7 +87,7 @@ const Works = () => {
                     width="100%"
                     height="100%"
                     objectFit="cover"
-                    fallback={fall}
+                    fallbackSrc="https://flevix.com/wp-content/uploads/2019/07/Untitled-2.gif"
                   />
                 </Box>
               </Box>

@@ -6,7 +6,7 @@ const Layout = ({ children, ...props }) => {
   return (
     <Box {...props}>
       <Navbar />
-      <Box font="inter">{children}</Box>
+      <Box font="inter" mt="66px">{children}</Box>
     </Box>
   );
 };

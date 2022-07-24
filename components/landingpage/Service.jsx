@@ -1,5 +1,6 @@
-import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Link, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
+import NextLink from "next/link";
 
 const serviceDetails = [
   {
@@ -28,6 +29,7 @@ const Service = () => {
       px={{ base: "31px", md: "11px" }}
       py={["31px", "47px"]}
       mt={{ base: "85px", md: "120px" }}
+      id="service"
     >
       <Text
         as="h3"
@@ -69,24 +71,28 @@ const Service = () => {
         </Flex>
       </Box>
       <Box mt={["22px", "53px"]} w="full">
-        <Button
-          borderRadius="70px"
-          border="1px"
-          borderColor={["brand.yellow", "brand.brown"]}
-          background="transparent"
-          color="#000"
-          w="100%"
-          display="block"
-          maxW="493px"
-          mx="auto"
-          mt={["24px", "32px"]}
-          h={{ base: "52px", md: "84px" }}
-          _hover={{ bg: "transparent" }}
-          _focus={{ bg: "transparent" }}
-          fontSize={{ base: "13px", md: "24px" }}
-        >
-          READY TO GET A BOOK COVER NOW
-        </Button>
+        <NextLink href="https://wa.me/message/JX5ANIYU4LFCK1" passHref>
+          <Link _hover={{ bg: "transparent", textDecoration: "none" }}>
+            <Button
+              borderRadius="70px"
+              border="1px"
+              borderColor={["brand.yellow", "brand.brown"]}
+              background="transparent"
+              color="#000"
+              w="100%"
+              display="block"
+              maxW="493px"
+              mx="auto"
+              mt={["24px", "32px"]}
+              h={{ base: "52px", md: "84px" }}
+              _hover={{ bg: "transparent" }}
+              _focus={{ bg: "transparent" }}
+              fontSize={{ base: "13px", md: "24px" }}
+            >
+              READY TO GET A BOOK COVER NOW
+            </Button>
+          </Link>
+        </NextLink>
       </Box>
     </Box>
   );

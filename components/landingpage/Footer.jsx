@@ -38,7 +38,7 @@ const Footer = () => {
               </Link>
             </NextLink>
 
-            <NextLink href="/" passHref>
+            <NextLink href="https://web.facebook.com/Gr8Designer" passHref>
               <Link>
                 <Icon
                   as={BsFacebook}
@@ -58,7 +58,10 @@ const Footer = () => {
               </Link>
             </NextLink>
 
-            <NextLink href="/" passHref>
+            <NextLink
+              href="https://www.instagram.com/oladelegraphics.com.ng/"
+              passHref
+            >
               <Link>
                 <Icon
                   as={AiFillInstagram}
@@ -71,37 +74,41 @@ const Footer = () => {
         </Box>
 
         <Flex w={["100%", "50%"]} align="flex-end" justify="flex-end">
-          <Flex
-            bgColor="brand.white"
-            px="15px"
-            py="15px"
-            borderRadius="60px"
-            maxW="331px"
-            gap={["4px","22px"]}
-            align="center"
-            cursor="pointer"
-            h={["29px", "70px"]}
-            maxH="70px"
-          >
-            <Image
-              src="/landingpage/me.jpg"
-              w={["25px","56px"]}
-              h={["25px","56px"]}
-              alt="message"
-              borderRadius="full"
-            />
+          <NextLink href="https://wa.me/message/JX5ANIYU4LFCK1" passHref>
+            <Link>
+              <Flex
+                bgColor="brand.white"
+                px="15px"
+                py="15px"
+                borderRadius="60px"
+                maxW="331px"
+                gap={["4px", "22px"]}
+                align="center"
+                cursor="pointer"
+                h={["29px", "70px"]}
+                maxH="70px"
+              >
+                <Image
+                  src="/landingpage/me.jpg"
+                  w={["25px", "56px"]}
+                  h={["25px", "56px"]}
+                  alt="message"
+                  borderRadius="full"
+                />
 
-            <Box fontSize={["10px","12px"]} color="#000">
-              <Text fontWeight="700">Message Oladele </Text>
-              <Text noOfLines="1" display={["none", "block"]}>
-                Online. Avg. Response Time:{" "}
-                <Text as="strong" fontWeight="700">
-                  30
-                </Text>{" "}
-                min.
-              </Text>
-            </Box>
-          </Flex>
+                <Box fontSize={["10px", "12px"]} color="#000">
+                  <Text fontWeight="700">Message Oladele </Text>
+                  <Text noOfLines="1" display={["none", "block"]}>
+                    Online. Avg. Response Time:{" "}
+                    <Text as="strong" fontWeight="700">
+                      30
+                    </Text>{" "}
+                    min.
+                  </Text>
+                </Box>
+              </Flex>
+            </Link>
+          </NextLink>
         </Flex>
       </Flex>
     </Flex>

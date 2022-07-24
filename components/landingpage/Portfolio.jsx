@@ -6,7 +6,7 @@ import Slider from "./Slider";
 const Portfolio = () => {
   const router = useRouter();
   return (
-    <Box mt={{ base: "75px", md: "99px" }} w="full">
+    <Box mt={{ base: "75px", md: "99px" }} w="full" id="work">
       <Box maxW="1200px" mx="auto" px={{ base: "31px", md: "11px" }}>
         <Text
           as="h1"

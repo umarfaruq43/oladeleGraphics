@@ -15,7 +15,12 @@ const Features = () => {
         justify="space-around"
         mx="auto"
       >
-        <Flex align="center" gap="14.5px" minW="148px" fontSize={["12px", "24px"]}>
+        <Flex
+          align="center"
+          gap="14.5px"
+          minW="148px"
+          fontSize={["12px", "24px"]}
+        >
           <Box>
             <Image
               w={["34px", "76px"]}
@@ -30,7 +35,12 @@ const Features = () => {
           </Box>
         </Flex>
         {/* Good Understanding */}
-        <Flex align="center" gap="14.5px" minW="148px" fontSize={["12px", "24px"]}>
+        <Flex
+          align="center"
+          gap="14.5px"
+          minW="148px"
+          fontSize={["12px", "24px"]}
+        >
           <Box>
             <Image
               w={["34px", "76px"]}
@@ -47,7 +57,12 @@ const Features = () => {
 
         {/* Fair Budget */}
 
-        <Flex align="center" gap="14.5px" minW="148px" fontSize={["12px", "24px"]}>
+        <Flex
+          align="center"
+          gap="14.5px"
+          minW="148px"
+          fontSize={["12px", "24px"]}
+        >
           <Box>
             <Image
               w={["34px", "76px"]}

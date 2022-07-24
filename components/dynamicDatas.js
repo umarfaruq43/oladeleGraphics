@@ -163,3 +163,36 @@ export const userTestimony = [
     countryName: "Nigeria",
   },
 ];
+
+
+// const faqQue = [
+//     {
+//       que: "1.	How much do you charge for a paperback design?",
+//       ans: "The number of hours that go into each project strongly depends on your needs and the delivered content. That’s why prices might vary.
+//       The happy part is that you get 5x the value of whatever you invest in for your book cover design.",
+//     },
+//     {
+//       que: "2.	How long does it take to get my book cover done?",
+//       ans: " 72hrs.
+//       Yes, that’s the time limit to submit your design project. Although, you can request a wait and get the package which will attract extra charges.",
+//     },
+//     {
+//       que: "3.	Do you work for a foreign client?",
+//       ans: "Yes.
+//       I have all the possible safe and trusted channels to deliver your project and protect your information.",
+//     },
+//     {
+//       que: "Section 1 title",
+//       ans: "a.	The Book Title and Subtitle
+//       b.	The Author’s Name
+//       c.	The blurb
+//       d.	Other information that you need to have on the Cover.
+//       e.	Your budget
+//       ",
+//     },
+//     {
+//       que: "5.	Can I design a cover while my book is at the proofreading stage?",
+//       ans: "Yes.
+//       That’s the best to speed up the book processing.",      
+//     },
+//   ];

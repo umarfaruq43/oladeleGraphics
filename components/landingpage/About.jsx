@@ -1,9 +1,16 @@
-import { Box, Button, Divider, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Divider, Flex, Image, Text, Link } from "@chakra-ui/react";
 import React from "react";
+import NextLink from "next/link";
 
 const About = () => {
   return (
-    <Box mt={["39px","85px"]} maxW="1200px" mx="auto" p={["31px", "11px"]}>
+    <Box
+      mt={["39px", "85px"]}
+      maxW="1200px"
+      mx="auto"
+      p={["31px", "11px"]}
+      id="about"
+    >
       <Flex>
         <Image
           src="/landingpage/me.jpg"
@@ -20,20 +27,26 @@ const About = () => {
           <Text fontSize={["12px", "24px"]} mt="12px">
             Professionally trained graphic <br /> designer
           </Text>
-          <Button
-            borderRadius="10px"
-            border="1px"
-            borderColor="brand.yellow"
-            background="transparent"
-            color="#000"
-            display="block"
-            w={["94px", "161px"]}
-            mt="3"
-            h={["29px", "55px"]}
-            fontSize={["12px", "24px"]}
-          >
-            Contact Me
-          </Button>
+
+          <NextLink href="https://wa.me/message/JX5ANIYU4LFCK1" passHref>
+            <Link _hover={{ bg: "transparent", textDecoration: "none" }}>
+              <Button
+                borderRadius="10px"
+                border="1px"
+                borderColor="brand.yellow"
+                background="transparent"
+                color="#000"
+                display="block"
+                w={["94px", "161px"]}
+                mt="3"
+                h={["29px", "55px"]}
+                _hover={{ bg: "transparent", textDecoration: "none" }}
+                fontSize={["12px", "24px"]}
+              >
+                Contact Me
+              </Button>
+            </Link>
+          </NextLink>
         </Box>
       </Flex>
 
@@ -100,7 +113,12 @@ const About = () => {
 
         <Divider />
 
-        <Box fontWeight="400" fontSize={["12px", "24px"]} mt="17px" maxW="897px">
+        <Box
+          fontWeight="400"
+          fontSize={["12px", "24px"]}
+          mt="17px"
+          maxW="897px"
+        >
           <Text>
             Passionate artist made into a professional Graphic Designer with 3
             years of experience in book cover design.

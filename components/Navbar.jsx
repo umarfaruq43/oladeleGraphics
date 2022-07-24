@@ -35,7 +35,7 @@ export default function Navbar() {
   }, []); // eslint-disable-line
 
   return (
-    <Box zIndex="50">
+    <Box zIndex="50" position="fixed" w="full">
       <Flex
         // bg={useColorModeValue("white", "gray.800")}
         bgColor="brand.brown"
@@ -150,7 +150,7 @@ const MobileNavItem = ({ label, children, href }) => {
 
 
   return (
-    <Stack spacing={4}>
+    <Stack spacing={4} >
       <Flex
         py={2}
         as={Link}
