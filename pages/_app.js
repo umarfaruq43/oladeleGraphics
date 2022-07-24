@@ -1,14 +1,24 @@
 import { ChakraProvider, CSSReset } from "@chakra-ui/react";
 import theme from "../theme";
 import "../styles/globals.css";
+import "aos/dist/aos.css";
 import "@fontsource/inter/400.css";
 import "swiper/css";
 import "swiper/css/zoom";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import NextNProgress from "nextjs-progressbar";
+import { useEffect } from "react";
+import Aos from "aos";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
   return (
     <ChakraProvider theme={theme}>
       <CSSReset />

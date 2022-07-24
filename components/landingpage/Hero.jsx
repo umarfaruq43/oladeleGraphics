@@ -1,14 +1,9 @@
 import { Box, Flex, Text, Image, Button, Link } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import NextLink from "next/link";
-import "aos/dist/aos.css";
 
-import AOS from "aos";
 const Hero = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+
 
   return (
     <Box

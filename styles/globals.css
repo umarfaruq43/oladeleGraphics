@@ -128,3 +128,9 @@ a {
     width: 440px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .swiper-container {
+    width: 940px;
+  }
+}

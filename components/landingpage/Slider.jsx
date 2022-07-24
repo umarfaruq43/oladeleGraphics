@@ -58,11 +58,12 @@ const Slider = () => {
                   className="slides"
                   minW="281px"
                   h="335px"
+                  px={["0","15px"]}
                 >
                   <Image
                     src={item && item}
                     alt="Work Sample"
-                    // width="100%"
+                    width="100%"
                     height="100%"
                     // layout="fill"
                     // quality="40"

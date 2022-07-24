@@ -35,7 +35,7 @@ export default function Navbar() {
   }, []); // eslint-disable-line
 
   return (
-    <Box zIndex="50" position="fixed" w="full">
+    <Box zIndex="50" position="fixed" w="full" top="0">
       <Flex
         // bg={useColorModeValue("white", "gray.800")}
         bgColor="brand.brown"
@@ -66,7 +66,11 @@ export default function Navbar() {
           <IconButton
             onClick={onToggle}
             icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+              isOpen ? (
+                <CloseIcon w={3} h={3} color="brand.white" />
+              ) : (
+                <HamburgerIcon color="brand.white" w={5} h={5} />
+              )
             }
             variant={"dark"}
             aria-label={"Toggle Navigation"}
