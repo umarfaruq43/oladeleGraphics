@@ -22,7 +22,7 @@ export default function Home() {
       <Head>
         <title>Oladele Graphics</title>
         <meta name="description" content="Oladele Grphics website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Layout overflow="hidden">
         <Hero />
