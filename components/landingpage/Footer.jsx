@@ -28,7 +28,7 @@ const Footer = () => {
             CONTACTS
           </Text>
           <Box>
-            <NextLink href="/" passHref>
+            <NextLink href="https://m.me/Gr8Oladele" passHref>
               <Link>
                 <Icon
                   as={BsMessenger}
