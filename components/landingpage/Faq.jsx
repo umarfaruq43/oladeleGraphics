@@ -161,7 +161,7 @@ const Faq = () => {
                   fontWeight="500"
                 >
                   {/* {i + 1}. {que} */}
-                  4. Section 1 title
+                  4. What are the requirements needed to get started?
                 </Box>
                 <AccordionIcon />
               </AccordionButton>

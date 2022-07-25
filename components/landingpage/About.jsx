@@ -1,4 +1,12 @@
-import { Box, Button, Divider, Flex, Image, Text, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Divider,
+  Flex,
+  Image,
+  Text,
+  Link,
+} from "@chakra-ui/react";
 import React from "react";
 import NextLink from "next/link";
 
@@ -65,7 +73,7 @@ const About = () => {
           mb="13px"
           justify={["space-between", "normal"]}
         >
-          <Box maxW="225px" w="100%"  >
+          <Box maxW="225px" w="100%">
             <Text fontWeight="500px" fontSize={["12px", "24px"]}>
               From
             </Text>

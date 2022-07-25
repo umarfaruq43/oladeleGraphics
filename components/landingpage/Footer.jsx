@@ -48,7 +48,7 @@ const Footer = () => {
               </Link>
             </NextLink>
 
-            <NextLink href="/" passHref>
+            <NextLink href="https://wa.me/message/JX5ANIYU4LFCK1" passHref>
               <Link>
                 <Icon
                   as={BsWhatsapp}
@@ -94,6 +94,7 @@ const Footer = () => {
                 cursor="pointer"
                 h={["29px", "70px"]}
                 maxH="70px"
+                shadow="lg"
               >
                 <Image
                   src="/landingpage/me.jpg"
