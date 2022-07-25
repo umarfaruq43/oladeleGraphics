@@ -37,11 +37,12 @@ const About = () => {
                 background="transparent"
                 color="#000"
                 display="block"
-                w={["94px", "161px"]}
+                w={["94px", "170px"]}
                 mt="3"
                 h={["29px", "55px"]}
                 _hover={{ bg: "transparent", textDecoration: "none" }}
                 fontSize={["12px", "24px"]}
+                fontWeight="500"
               >
                 Contact Me
               </Button>
@@ -60,11 +61,11 @@ const About = () => {
         mx="auto"
       >
         <Flex
-          gap={["", "", "265px"]}
+          gap={["", "", "143px"]}
           mb="13px"
           justify={["space-between", "normal"]}
         >
-          <Box>
+          <Box maxW="225px" w="100%"  >
             <Text fontWeight="500px" fontSize={["12px", "24px"]}>
               From
             </Text>

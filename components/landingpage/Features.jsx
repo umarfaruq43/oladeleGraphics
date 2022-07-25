@@ -1,7 +1,16 @@
 import { Box, Image, SimpleGrid, Text, Flex } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const Features = () => {
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-cubic",
+      // once: true,
+      offset: 300,
+    });
+  }, []);
   return (
     <Box>
       <Flex
@@ -20,6 +29,7 @@ const Features = () => {
           gap="14.5px"
           minW="148px"
           fontSize={["12px", "24px"]}
+          data-aos="fade-right"
         >
           <Box>
             <Image

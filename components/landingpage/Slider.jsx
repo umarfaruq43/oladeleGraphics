@@ -58,7 +58,7 @@ const Slider = () => {
                   className="slides"
                   minW="281px"
                   h="335px"
-                  px={["0","15px"]}
+                  px={["0", "15px"]}
                 >
                   <Image
                     src={item && item}
@@ -72,7 +72,7 @@ const Slider = () => {
                     // w="100%"
                     // h="335px"
                     // objectFit="cover"
-                    fallbackSrc="https://via.placeholder.com/281X335?Loading..."
+                    fallbackSrc="https://flevix.com/wp-content/uploads/2019/07/Untitled-2.gif"
                   />
                 </Box>
               </SwiperSlide>

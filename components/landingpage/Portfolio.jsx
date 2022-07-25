@@ -15,7 +15,7 @@ const Portfolio = () => {
           maxW="420px"
         >
           SEE WHAT YOU CAN GET FROM
-          <Text as="span" color="brand.yellow">
+          <Text as="span" color="brand.yellow" fontWeight="800">
             {" "}
             OLADELE
           </Text>

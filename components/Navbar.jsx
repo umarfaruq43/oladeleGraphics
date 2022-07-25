@@ -35,7 +35,7 @@ export default function Navbar() {
   }, []); // eslint-disable-line
 
   return (
-    <Box zIndex="50" position="fixed" w="full" top="0">
+    <Box zIndex="30" position="fixed" w="full" top="0">
       <Flex
         // bg={useColorModeValue("white", "gray.800")}
         bgColor="brand.brown"

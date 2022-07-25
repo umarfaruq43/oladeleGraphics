@@ -3,8 +3,6 @@ import React, { useEffect } from "react";
 import NextLink from "next/link";
 
 const Hero = () => {
-
-
   return (
     <Box
       overflow="hidden"
@@ -30,7 +28,7 @@ const Hero = () => {
             >
               Possibly the most talented and affordable
             </Text>
-            <Flex>
+            <Flex >
               <Text
                 fontWeight="900"
                 fontSize={["96px", null, "200px"]}
@@ -41,6 +39,7 @@ const Hero = () => {
                 textShadow=" brand.textShadow"
                 style={{ textShadow: "20px 2px 15px rgba(0, 0, 0, 0.5)" }}
                 zIndex={20}
+                data-aos="fade-up"
               >
                 B
               </Text>
@@ -56,6 +55,7 @@ const Hero = () => {
                 ml={["-16px", "-30px"]}
                 mt={["-10px", null, "-20px"]}
                 zIndex="15"
+                data-aos="fade-up"
               >
                 o
               </Text>
@@ -71,6 +71,7 @@ const Hero = () => {
                 ml={["-14px", null, "-34px"]}
                 mt={["-10px", null, "-20px"]}
                 zIndex="10"
+                data-aos="fade-up"
               >
                 o
               </Text>
@@ -84,6 +85,7 @@ const Hero = () => {
                 style={{ textShadow: "20px 2px 15px rgba(0, 0, 0, 0.5)" }}
                 zIndex={9}
                 ml={["-14px", null, "-34px"]}
+                data-aos="fade-up"
               >
                 K
               </Text>
@@ -155,6 +157,7 @@ const Hero = () => {
             maxW="200px"
             maxH="200px"
             mt="-120px"
+            data-aos="fade-right"
           />
         </Box>
       </Flex>

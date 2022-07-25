@@ -11,9 +11,9 @@ const Modal = ({ data, show, handleShow }) => {
   data && data.children && data.children.length !== 0
     ? getAll.push(data.children[0])
     : null;
- data && data.children && data.children.length > 1
-   ? getAll.push(data.children[1])
-   : null;
+  data && data.children && data.children.length > 1
+    ? getAll.push(data.children[1])
+    : null;
   data && data.children && data.children.length > 2
     ? getAll.push(data.children[2])
     : null;
@@ -25,20 +25,20 @@ const Modal = ({ data, show, handleShow }) => {
   // console.log(mainData);
   return (
     <Flex
+    zIndex="50"
       position="fixed"
       bgColor="rgba(0,0,0, .05)"
       bottom="0"
       right="0"
       w="full"
       top="0"
-      zIndex="10"
       justify="center"
       align="center"
       display={show ? "flex" : "none"}
     >
       <Button
+        zIndex="50"
         position="absolute"
-        zIndex="10"
         right="10"
         top="10"
         onClick={handleShow}

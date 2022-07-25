@@ -73,7 +73,14 @@ const Footer = () => {
           </Box>
         </Box>
 
-        <Flex w={["100%", "50%"]} align="flex-end" justify="flex-end">
+        <Flex
+          align="flex-end"
+          justify="flex-end"
+          position="fixed"
+          zIndex={80}
+          bottom="16px"
+          right="16px"
+        >
           <NextLink href="https://wa.me/message/JX5ANIYU4LFCK1" passHref>
             <Link>
               <Flex
