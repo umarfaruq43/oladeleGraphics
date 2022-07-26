@@ -56,8 +56,8 @@ const Faq = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4} px={["20px", "70px"]}>
-              <Text>
+            <AccordionPanel pb={4} px={["20px", "70px"]} fontSize={["12px", "16px"]}>
+              <Text  >
                 The number of hours that go into each project strongly depends
                 on your needs and the delivered content. That’s why prices might
                 vary.
@@ -94,7 +94,7 @@ const Faq = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4} px={["20px", "70px"]}>
+            <AccordionPanel pb={4} px={["20px", "70px"]} fontSize={["12px", "16px"]}>
               <Text as="strong">72hrs.</Text>
               <Text>
                 {" "}
@@ -131,7 +131,7 @@ const Faq = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4} px={["20px", "70px"]}>
+            <AccordionPanel pb={4} px={["20px", "70px"]} fontSize={["12px", "16px"]}>
               <Text as="strong">Yes.</Text>
               <Text>
                 {" "}
@@ -166,7 +166,7 @@ const Faq = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4} px={["20px", "70px"]}>
+            <AccordionPanel pb={4} px={["20px", "70px"]} fontSize={["12px", "16px"]}>
               <OrderedList>
                 <ListItem listStyleType="lower-alpha">
                   The Book Title and Subtitle
@@ -210,7 +210,7 @@ const Faq = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4} px={["20px", "70px"]}>
+            <AccordionPanel pb={4} px={["20px", "70px"]} fontSize={["12px", "16px"]}>
               <Text as="strong">Yes</Text>
               <Text> That’s the best to speed up the book processing.</Text>
             </AccordionPanel>
