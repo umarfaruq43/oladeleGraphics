@@ -176,7 +176,7 @@ const Faq = () => {
                 </ListItem>{" "}
                 <ListItem listStyleType="lower-alpha">The blurb</ListItem>{" "}
                 <ListItem listStyleType="lower-alpha">
-                  ther information that you need to have on the Cover.
+                  Other information that you need to have on the Cover.
                 </ListItem>
                 <ListItem listStyleType="lower-alpha">Your budget</ListItem>
               </OrderedList>
