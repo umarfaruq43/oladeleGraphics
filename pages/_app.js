@@ -23,18 +23,21 @@ function MyApp({ Component, pageProps }) {
     });
   }, []);
   return (
-    <ChakraProvider theme={theme}>
-      <CSSReset />
+    <>
+  
+        <ChakraProvider theme={theme}>
+          <CSSReset />
 
-      <NextNProgress
-        color="#29D"
-        startPosition={0.3}
-        stopDelayMs={200}
-        height={3}
-        showOnShallow={true}
-      />
-      <Component {...pageProps} />
-    </ChakraProvider>
+          <NextNProgress
+            color="#29D"
+            startPosition={0.3}
+            stopDelayMs={200}
+            height={3}
+            showOnShallow={true}
+          />
+          <Component {...pageProps} />
+        </ChakraProvider>
+    </>
   );
 }
 

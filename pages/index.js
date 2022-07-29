@@ -11,6 +11,7 @@ import Service from "../components/landingpage/Service";
 import Slider from "../components/landingpage/Slider";
 import Video from "../components/landingpage/Video";
 import Layout from "../Layout/Layout";
+import Pixel from "../pixel";
 // import styles from "../styles/Home.module.css";
 // import "swiper/css";
 // import "swiper/css/zoom";
@@ -19,11 +20,7 @@ import Layout from "../Layout/Layout";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Oladele Graphics</title>
-        <meta name="description" content="Oladele Grphics website" />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+      <Pixel name="FacebookPixel" />
       <Layout overflow="hidden">
         <Hero />
         <Features />
