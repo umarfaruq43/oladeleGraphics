@@ -18,22 +18,22 @@ import Pixel from "../pixel";
 // import "swiper/css/navigation";
 // import "swiper/css/pagination";
 export default function Home() {
-  return (
-    <>
-      <Pixel name="FacebookPixel" />
-      <Layout overflow="hidden">
-        <Hero />
-        <Features />
-        <Video />
-        <Portfolio />
-        <Box bgColor="brand.brownFade">
-          <Service />
-        </Box>
-        <About />
-        <Client />
-        <Faq />
-        <Footer />
-      </Layout>
-    </>
-  );
+    return (
+        <>
+            <Pixel name="FacebookPixel" />
+            <Layout overflow="hidden">
+                <Hero />
+                <Features />
+                <Video />
+                <Portfolio />
+                <Box bgColor="brand.brownFade">
+                    <Service />
+                </Box>
+                <About />
+                <Client />
+                <Faq />
+                <Footer whatsapp={"https://wa.me/message/JX5ANIYU4LFCK1"} />
+            </Layout>
+        </>
+    );
 }

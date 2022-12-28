@@ -3,7 +3,7 @@ import React from "react";
 import NextLink from "next/link";
 import { BsFacebook, BsMessenger, BsWhatsapp } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
-const Footer = () => {
+const Footer = ( {whatsapp} ) => {
     return (
         <Flex
             alignItems="center"
@@ -88,7 +88,8 @@ const Footer = () => {
                     right="16px"
                 >
                     <NextLink
-                        href="https://wa.me/message/JX5ANIYU4LFCK1"
+                        // href="https://wa.me/message/JX5ANIYU4LFCK1"
+                        href={whatsapp}
                         passHref
                     >
                         <Link>

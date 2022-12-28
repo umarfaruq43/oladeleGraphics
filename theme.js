@@ -3,6 +3,7 @@ import { extendTheme } from "@chakra-ui/react";
 const colors = {
   brand: {
     brown: "#4F474E",
+    black:"#212121",
     brownFade: "#E8E2E2",
     yellow: "#EFC862",
     white: "#fff",
