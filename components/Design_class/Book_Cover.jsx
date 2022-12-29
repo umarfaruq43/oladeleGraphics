@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import ScreenWidth from "../../Layout/ScreenWidth";
 import Examples from "./Examples";
@@ -9,10 +9,10 @@ const Book_Cover = () => {
             <ScreenWidth>
                 <Box py="60px">
                     <Text
-                        // maxW={"700px"}
+                        maxW={"900px"}
                         mx="auto"
                         fontWeight={"900"}
-                        fontSize="30px"
+                        fontSize={{ base: "3xl", md: "4xl" }}
                         textAlign={"center"}
                         color="brand.brown"
                     >
@@ -22,29 +22,35 @@ const Book_Cover = () => {
                         </Text>{" "}
                         and how can you learn it?
                     </Text>
+
                     <Text
-                        maxW="700px"
+                        mt="6"
+                        maxW={"800"}
                         fontWeight={"600"}
                         fontSize={"18px"}
                         textAlign={"center"}
                         mx="auto"
-                        pb="50px"
+                        mb="20"
+                        // p="30px"
+                        // color="brand.yellow"
+                        // border={"4px"}
+                        // borderColor="brand.yellow"
+                        // bgColor={"brand.brown"}
                     >
                         Book Cover Design is the logical interpretation of a
                         {` book's`} content using the design elements for the
                         visual appearance of a book.
                     </Text>
+
                     <Box>
                         <Examples />
                     </Box>
                     <Box
                         mt="60px"
-                        fontWeight={"600"}
                         // maxW="2xl"
                         mx="auto"
                         textAlign="center"
-                        fontSize={"20px"}
-                        // color={"gray.500"}
+                        // fontSize={"20px"}
                     >
                         <Text>It’s that simple.</Text>
                         <Text mt="16px">
@@ -57,16 +63,20 @@ const Book_Cover = () => {
                             It doesn’t end there. It’s very easy to learn that a
                             computer illiterate will do it without any hardship.
                         </Text>
-                        <Text>And that means,</Text>
+                        <Text my="4">And that means,</Text>
                         <Text
-                            mt="16px"
-                            fontSize={["18px", null, "24px"]}
-                            color="brand.black"
-                            
+                            my="10"
+                            mx="auto"
+                            maxW={"1000"}
+                            fontWeight={"900"}
+                            fontSize={{ base: "3xl", md: "4xl" }}
+                            textAlign={"center"}
+                            color="brand.brown"
                         >
-                            You don’t need any basic knowledge of computers. You
-                            also don’t have to know the basics of design or
-                            technical drawing.
+                            You don’t need any{" "}
+                            <Text as="span"> basic knowledge of computers</Text>
+                            . You also don’t have to know the basics of design
+                            or technical drawing.
                         </Text>
                     </Box>
                 </Box>

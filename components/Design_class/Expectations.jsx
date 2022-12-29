@@ -52,8 +52,8 @@ export default function Expectations() {
                             excellently and exceptionally from the comfort of
                             your home.
                         </Text>
-                        <Text mt="6px">
-                            This are what you will learn from this class:
+                        <Text mt="4">
+                            This is what you will learn from this class:
                         </Text>
 
                         {things.map((item, i) => {

@@ -65,7 +65,15 @@ const Requirement = () => {
                                 A strong mindset to take on DIY projects.
                             </ListItem>
                         </List>
-                        <Text fontSize={"18px"}>
+                        <Text
+                            my="12"
+                            mx="auto"
+                            maxW={"1000"}
+                            fontWeight={"900"}
+                            fontSize={{ base: "3xl", md: "4xl" }}
+                            textAlign={"center"}
+                            color="brand.brown"
+                        >
                             This is a time-tested and proven program filled with
                             strategies that work so you can build an empire off
                             of book cover design.

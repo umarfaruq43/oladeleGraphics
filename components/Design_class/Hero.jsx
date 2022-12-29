@@ -15,7 +15,6 @@ import ScreenWidth from "../../Layout/ScreenWidth";
 export default function CallToActionWithAnnotation() {
     return (
         <Box
-            
             bgImage="/bg.jpg"
             bgPosition={"center"}
             bgAttachment="fixed"
@@ -45,7 +44,7 @@ export default function CallToActionWithAnnotation() {
                     >
                         <Text
                             fontWeight={700}
-                            fontSize={{ base: "2xl", sm: "2xl", md: "4xl" }}
+                            fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
                             lineHeight={"130%"}
                             // color="#fff"
                             color={"brand.yellow"}
@@ -59,7 +58,7 @@ export default function CallToActionWithAnnotation() {
                         </Text>
                         <Box
                             mt="34px"
-                            // maxW="4xl"
+                            maxW="1000px"
                             display={"block"}
                             textAlign="center"
                             mx={"auto"}
@@ -69,19 +68,29 @@ export default function CallToActionWithAnnotation() {
                                 textAlign="center"
                                 fontSize={{ base: "2xl", sm: "2xl", md: "2xl" }}
                             >
-                                You can make a huge sum of money between
-                                N100,000 to N300,000 Naira Monthly by designing
-                                a book cover for 6 hours daily in the comfort of
-                                your room.
+                                You can{" "}
+                                <Text
+                                    as="span"
+                                    fontWeight={"bold"}
+                                    color="brand.yellow"
+                                >
+                                    {" "}
+                                    make a huge sum of money
+                                </Text>{" "}
+                                between N100,000 to N300,000 Naira Monthly by
+                                designing a book cover for 6 hours daily in the
+                                comfort of your room.
                             </Text>
                             <Text
                                 mt="30px"
                                 fontSize={{ base: "2xl", sm: "2xl", md: "2xl" }}
                             >
                                 And you can make an eye-catching book cover that
-                                best presents a book to the right audience, even
-                                when you have little knowledge of Graphics
-                                Design
+                                best presents a book to the right audience,{" "}
+                                <Text as="span" textDecor={"underline"}>
+                                    even when you have little knowledge{" "}
+                                </Text>{" "}
+                                of Graphics Design
                             </Text>
                             {/* <Text>
                                 And you can make an eye-catching book cover that
@@ -112,7 +121,7 @@ export default function CallToActionWithAnnotation() {
                                     bg: "transparent",
                                 }}
                             >
-                                Get Started
+                                Get Access
                             </Button>
                         </Box>
                     </Box>

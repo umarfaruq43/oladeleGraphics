@@ -39,13 +39,13 @@ const Bonus = () => {
                     // align={"center"}
                     flexDir={["column", "row"]}
                 >
-                    <Box shadow={"md"} w={["100%", "50%"]} p="8" fontSize={["20px"]} fontWeight="bold" bgColor={"brand.brown"} color="brand.yellow" borderRadius={"8px"}>
+                    <Box shadow={"md"} w={["100%", "50%"]} p="8" fontSize={["20px"]} fontWeight="bold" bgColor={"brand.brown"} color="brand.white" borderRadius={"8px"}>
                         A FREE one-day webinar on how to run a design business
                         that fetches you a huge sum of money between N100,000 to
                         N300,000 Naira Monthly.
                     </Box>
 
-                    <Box shadow={"md"} w={["100%", "50%"]} p="8" fontSize={["20px"]} fontWeight="bold" bgColor={"brand.brown"} color="brand.yellow" borderRadius={"8px"}>
+                    <Box shadow={"md"} w={["100%", "50%"]} p="8" fontSize={["20px"]} fontWeight="bold" bgColor={"brand.brown"} color="brand.white" borderRadius={"8px"}>
                         A support community to help you with any issue
                         concerning book cover design.
                     </Box>

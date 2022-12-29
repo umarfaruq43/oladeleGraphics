@@ -15,7 +15,7 @@ import Faq from "../components/Design_class/Faq";
 
 const design_class = () => {
     return (
-        <Box className="design">
+        <Box >
             <Pixel name="FacebookPixel" />
             <Hero />
             <Graphics />
