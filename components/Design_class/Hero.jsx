@@ -120,6 +120,9 @@ export default function CallToActionWithAnnotation() {
                                     // bg: "brand.yellow",
                                     bg: "transparent",
                                 }}
+                                as="a"
+                                href="https://selar.co/2d2r"
+                                target="_blank"
                             >
                                 Get Access
                             </Button>

@@ -11,6 +11,7 @@ import {
     List,
     ListItem,
     ListIcon,
+    Link,
 } from "@chakra-ui/react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { BsFillCheckCircleFill } from "react-icons/bs";
@@ -80,7 +81,7 @@ const faq = [
     },
     {
         que: "After signing up, how will I access the class?",
-        ans: "After signing up, you'll be added to a virtual class via telegram (I don't know the learning medium) where you'll be able to access the live teaching, coaching sessions, and materials.",
+        ans: `After signing up, you'll be added to a virtual class via telegram where you'll be able to access the live teaching, coaching sessions, and materials.`,
     },
 
     {
