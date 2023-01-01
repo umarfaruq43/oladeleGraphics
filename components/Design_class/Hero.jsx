@@ -103,28 +103,32 @@ export default function CallToActionWithAnnotation() {
                         <Box>
                             <Button
                                 mt="35px"
-                                py="25px"
+                                py="35px"
                                 px="40px"
                                 // bg={"brand.yellow"}
                                 bg={"transparent"}
                                 rounded={"full"}
-                                fontWeight="500"
+                                fontWeight="600"
+                                fontSize="2xl"
                                 border="1px"
                                 borderColor={"brand.yellow"}
                                 color="brand.white"
                                 _hover={{
                                     // bg: "brand.yellow",
-                                    bg: "transparent",
+                                    bg: "brand.yellow",
+                                    color: "brand.brown",
                                 }}
-                                _active={{
-                                    // bg: "brand.yellow",
-                                    bg: "transparent",
-                                }}
+                                _active={
+                                    {
+                                        // bg: "brand.yellow",
+                                        // bg: "transparent",
+                                    }
+                                }
                                 as="a"
                                 href="https://selar.co/2d2r"
                                 target="_blank"
                             >
-                                Get Access
+                                GIVE ME THE ACCESS FOR #10,500
                             </Button>
                         </Box>
                     </Box>
