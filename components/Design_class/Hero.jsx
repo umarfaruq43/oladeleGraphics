@@ -103,13 +103,13 @@ export default function CallToActionWithAnnotation() {
                         <Box>
                             <Button
                                 mt="35px"
-                                py="35px"
+                                // py="35px"
                                 px="40px"
                                 // bg={"brand.yellow"}
                                 bg={"transparent"}
                                 rounded={"full"}
                                 fontWeight="600"
-                                fontSize="2xl"
+                                fontSize={["sm","2xl"]}
                                 border="1px"
                                 borderColor={"brand.yellow"}
                                 color="brand.white"
@@ -128,7 +128,7 @@ export default function CallToActionWithAnnotation() {
                                 href="https://selar.co/2d2r"
                                 target="_blank"
                             >
-                                GIVE ME THE ACCESS FOR #10,500
+                                Get Access
                             </Button>
                         </Box>
                     </Box>

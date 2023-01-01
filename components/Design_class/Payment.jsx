@@ -27,7 +27,7 @@ const Payment = () => {
                             bg={"transparent"}
                             rounded={"full"}
                             fontWeight="600"
-                            fontSize="2xl"
+                            fontSize={["sm","2xl"]}
                             border="1px"
                             borderColor={"brand.yellow"}
                             color="brand.white"
