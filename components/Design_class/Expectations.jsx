@@ -16,7 +16,13 @@ import { MdCheckCircle } from "react-icons/md";
 export default function Expectations() {
     return (
         <Stack minH={"40vh"} direction={{ base: "column", md: "row" }}>
-            <Flex p={8} flex={1} align={"center"} justify={"center"} color="brand.black" >
+            <Flex
+                p={8}
+                flex={1}
+                align={"center"}
+                justify={"center"}
+                color="brand.black"
+            >
                 <Stack spacing={6} w={"full"} maxW={"xl"}>
                     <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
                         <Text
@@ -38,14 +44,11 @@ export default function Expectations() {
                             textTransform="uppercase"
                             color="brand.brown"
                         >
-                            what you will learn
+                            How you can learn it
                         </Text>
                     </Heading>
-                    <Box fontSize={{ base: "md", md: "18px" }}  >
-                        <Text
-                            fontSize={{ base: "md", md: "18px" }}
-                            
-                        >
+                    <Box fontSize={{ base: "md", md: "18px" }}>
+                        <Text fontSize={{ base: "md", md: "18px" }}>
                             The structure of this book cover class is designed
                             to take you through graphic design from scratch
                             before progressing to designing book covers
@@ -86,7 +89,7 @@ export default function Expectations() {
                     </Box>
                 </Stack>
             </Flex>
-            <Flex flex={1} display={["none",null, "flex"]}>
+            <Flex flex={1} display={["none", null, "flex"]}>
                 <Image
                     alt={"Login Image"}
                     objectFit={"cover"}

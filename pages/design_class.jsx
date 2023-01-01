@@ -12,10 +12,11 @@ import Bonus from "../components/Design_class/Bonus";
 import Requirement from "../components/Design_class/Requirement";
 import Payment from "../components/Design_class/Payment";
 import Faq from "../components/Design_class/Faq";
+import PaymentProve from "../components/Design_class/PaymentProve";
 
 const design_class = () => {
     return (
-        <Box >
+        <Box>
             <Pixel name="FacebookPixel" />
             <Hero />
             <Graphics />
@@ -23,6 +24,7 @@ const design_class = () => {
             <Expectations />
             <Bonus />
             <Requirement />
+            <PaymentProve />
             <Payment />
             <Faq />
             <Footer

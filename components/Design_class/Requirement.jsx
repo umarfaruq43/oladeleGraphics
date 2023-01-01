@@ -1,9 +1,11 @@
 import {
     Box,
     Heading,
+    Image,
     List,
     ListIcon,
     ListItem,
+    SimpleGrid,
     Text,
     useBreakpointValue,
 } from "@chakra-ui/react";
@@ -78,7 +80,19 @@ const Requirement = () => {
                             strategies that work so you can build an empire off
                             of book cover design.
                         </Text>
+
+                        <Text>
+                            And to access the class, you are not paying N25,000
+                            which would be a very good bargain especially when
+                            you consider the fact that…
+                        </Text>
+                        <Text mt="14px">
+                            Just one book cover design can earn you between
+                            N20,000 to N40,000.
+                        </Text>
                     </Box>
+
+                  
                 </Box>
             </ScreenWidth>
         </Box>

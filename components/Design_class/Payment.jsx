@@ -14,36 +14,37 @@ const Payment = () => {
                         fontWeight="bold"
                         fontSize={["24px", null, "32px"]}
                     >
-                        Click the Button below to GET INSTANT ACCESS to the
-                        program today!
+                        So you would really want to join the class right now and
+                        learn from the best.
                     </Text>
 
                     <Box>
                         <Button
                             mt="35px"
-                            py="25px"
+                            py="35px"
                             px="40px"
                             // bg={"brand.yellow"}
                             bg={"transparent"}
                             rounded={"full"}
                             fontWeight="600"
+                            fontSize="2xl"
                             border="1px"
                             borderColor={"brand.yellow"}
                             color="brand.white"
                             _hover={{
                                 // bg: "brand.yellow",
                                 bg: "brand.yellow",
-                                color: "brand.black",
+                                color: "brand.brown",
                             }}
                             _active={{
                                 // bg: "brand.yellow",
-                                bg: "transparent",
+                                // bg: "transparent",
                             }}
                             as="a"
                             href="https://selar.co/2d2r"
                             target="_blank"
                         >
-                            Get Access
+                            GIVE ME THE ACCESS FOR #10,500
                         </Button>
                     </Box>
                 </Box>
