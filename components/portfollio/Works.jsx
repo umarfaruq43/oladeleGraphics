@@ -80,7 +80,7 @@ const Works = () => {
                     align="center"
                   >
                     {/* <Spinner /> */}
-                    <Text color="#fff"> View larger Image </Text>
+                    <Text color="#fff" fontSize={["12px", null,'1rem']} > View larger Image </Text>
                   </Flex>
 
 

@@ -2,12 +2,13 @@ import { Box, Button, Text } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import React from "react";
 import Slider from "./Slider";
+import TestimoniesSlider from "./TestimoniesSlider";
 
 const Portfolio = () => {
   const router = useRouter();
   return (
     <Box mt={{ base: "75px", md: "99px" }} w="full" id="work">
-      <Box maxW="1200px" mx="auto" px={{ base: "31px", md: "11px" }}>
+      <Box maxW="1200px" mx="auto" px={{ base: "12px", md: "11px" }}>
         <Text
           as="h1"
           fontSize={{ base: "24px", md: "48px" }}
@@ -22,7 +23,8 @@ const Portfolio = () => {
         </Text>
 
         <Box>
-          <Slider />
+          {/* <Slider /> */}
+          <TestimoniesSlider />
         </Box>
 
         <Button
