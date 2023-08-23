@@ -20,7 +20,7 @@ const Modal = ({ data, show, handleShow }) => {
   //   : null;
 
   // console.log(getAll);
-  console.log(data);
+  
 
 
   return (
