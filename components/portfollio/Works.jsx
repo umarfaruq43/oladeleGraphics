@@ -38,17 +38,19 @@ const Works = () => {
 
   return (
     <Box position="relative" overflow="hidden">
-      <Box maxW="1200px" mx="auto" px={["14px", "11px"]} my="41px">
-        <SimpleGrid columns={["3"]} spacing={["0.51rem", null, "1.25rem"]} >
+
+      <Box maxW="1200px" mx="auto" px={["0px", "11px"]} my={["0.2rem","41px"]}>
+        <SimpleGrid columns={["3"]} spacing={["0.21rem", null, "1.25rem"]} >
           {totalWork.map((item, i) => {
             const handleShow = (e, item) => {
               setShow(!show);
               setCurrent(item);
             };
             
+            {current && <Modal show={show} handleShow={handleShow} data={current} />}
             return (
               <Box key={i}>
-                {current && <Modal show={show} handleShow={handleShow} data={current} />}
+               
                 <Box
                   overflow="hidden"
                   // w="281px"
