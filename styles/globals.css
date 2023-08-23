@@ -22,7 +22,6 @@ a {
 }
 .design * {
     font-family: "Nunito", sans-serif;
-    
 }
 
 /* .slides {
@@ -140,4 +139,8 @@ a {
         width: 940px;
         color: rgba(80, 72, 79, 0.894);
     }
+}
+
+.img {
+    object-fit: cover !important;
 }

@@ -40,7 +40,7 @@ export default function CallToActionWithAnnotation() {
                         textAlign={"center"}
                         py={{ base: 20, md: 36 }}
                         mx="auto"
-                        // maxW="5xl"
+                    // maxW="5xl"
                     >
                         <Text
                             fontWeight={700}
@@ -109,7 +109,7 @@ export default function CallToActionWithAnnotation() {
                                 bg={"transparent"}
                                 rounded={"full"}
                                 fontWeight="600"
-                                fontSize={["sm","2xl"]}
+                                fontSize={["sm", "2xl"]}
                                 border="1px"
                                 borderColor={"brand.yellow"}
                                 color="brand.white"
